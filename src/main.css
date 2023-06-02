@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+:root{
+    /*fuentes */
+    --font-main: 'Courier New', Courier, monospace; 
+    --fonsize-main-title: 65px; 
+    --fontsize-second-titles: 25px;
+    
+    /* colores */  
+    --back-color: rgb(233, 233, 233); 
+    --color-secun: #f0bcb0;
+    
+    /* tamaños */
+    --size-portada-logo: 550px; 
+}
+
+  
+html{
+    font-family: var(--font-main);      
+}
+
+
+body{
+  background-color: var(--back-color);
+}
+
+.content {
+    height: 100%;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top:3em;
+}
+
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 0.9em;
+    background: rgb(46,46,46);
+    background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(46,46,46,1) 35%, rgba(28,28,28,1) 100%);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover{
+    background: rgb(46,46,46);
+    background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(46,46,46,1) 5%, rgba(28,28,28,1) 35%);
+}
+
+
+@media (max-width: 720px){ 
+
+    .content {
+        width:80%;
+    }
+}

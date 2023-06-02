@@ -1,0 +1,43 @@
+.parrafo {
+    margin: 15px 0px;
+}
+
+.btn-curriculum{
+    border: none;
+    margin: 3em 0;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    background: rgb(46,46,46);
+    background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(46,46,46,1) 35%, rgba(28,28,28,1) 100%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn-curriculum:hover{
+    background: rgb(46,46,46);
+    background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(46,46,46,1) 5%, rgba(28,28,28,1) 35%);
+}
+
+.photoPerfil {
+    width: 200px;
+    margin-bottom: 2em;
+    border: 0.2em solid black ;
+    border-radius: 50%;
+}
+
+@media (max-width: 720px)
+{ 
+    .content{
+        width: 80%;
+    }
+
+    .photoPerfil {
+        width: 150px;
+    }
+
+    .parrafo {
+        font-size: 1em;
+        text-justify:inter-word;
+    }
+}

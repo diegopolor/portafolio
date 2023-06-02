@@ -1,0 +1,152 @@
+.contenedor{
+    width: 90%;
+    margin: auto;      
+}
+
+.portada{
+    width: 100%;
+    height:100vh;
+    background-size: cover;
+    background-position: top;
+    background-image: linear-gradient(rgb(0, 0, 0, .7), rgb(0, 0, 0, .7)),  url(../../assets/Cielo.svg);         
+}
+
+.estrella
+{
+   position: absolute;
+   background-color: white;
+   border-radius: 20px;
+   width: 5px;
+   height: 5px;
+   animation-name: parpadeo;      
+   animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo{
+    0%{opacity: .2;}
+    50%{opacity: 1;}
+    100%{opacity: .2;}
+}
+
+.fugaz{ 
+    width: 50px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    transform: rotate(-25deg);
+    animation-name: fugazA;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;   
+}
+
+@keyframes fugazA{
+  0%{top: 70%; left: 0%;}
+  100%{top: -10%; left: 90%; }
+}
+
+.portada-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portada-titulo{
+    color: white;
+    font-size: var(--fonsize-main-title);
+}
+
+.portada-parrafo{
+    color: white;
+    line-break: 20px;
+    margin-top: 10px;
+}
+
+.portada-img{
+    width:var(--size-portada-logo);   
+    animation-name: planeta;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+}
+
+@keyframes planeta{
+    0%{ margin-top: 0;}
+    50%{ margin-top: 20px;}
+    100%{ margin-top: 0; }
+}
+
+.home-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.home-menu-item {
+    text-decoration: none;
+    font-size: 0.9em;
+    background: rgb(46,46,46);
+    background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(46,46,46,1) 35%, rgba(28,28,28,1) 100%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.home-menu-item:hover{
+    background: rgb(46,46,46);
+    background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(46,46,46,1) 5%, rgba(28,28,28,1) 35%);
+}
+
+
+
+@media (max-width: 720px)
+{              
+    .portada-content{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .portada-img{
+        width: 60%;   
+        animation:none;
+    }
+
+    .portada-titulo{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .portada-parrafo{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .flecha-icono{ 
+        font-size: 3em;
+    }
+
+    .fugaz{ 
+        animation: none;
+    }
+
+    .home-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 30px 0px;
+    }
+
+    .home-menu-item {
+        font-size: 0.9em;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgb(49, 49, 49);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+}

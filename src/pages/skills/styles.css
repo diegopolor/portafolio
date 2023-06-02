@@ -1,0 +1,39 @@
+.content-skills{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5em 0;
+    gap: 5em;
+    justify-items: center;
+    align-items: center;
+}
+
+.images-skills{
+    cursor: pointer;
+    width: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+.images-skills:hover{
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+.name-skill{
+    text-align: center;
+    margin: 1em 0;
+}
+
+@media (max-width: 720px){ 
+
+    .content-skills{
+        justify-content: space-around;
+        gap: 0.8;
+    }
+
+    .name-skill{
+        font-size: 1em;
+
+    }
+}

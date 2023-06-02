@@ -1,0 +1,42 @@
+.content-porfolio{
+    margin: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.portoflio-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.image-portfolio{
+    width: 300px;
+    cursor: pointer;
+    filter: blur(2px);
+}
+
+.image-portfolio:hover {
+    filter: blur(0px);
+}
+
+.text-porfolio{  
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+    gap: 1em;
+}
+
+.title-item {
+    text-align: center;
+    margin: 1em 0;
+}
